@@ -14,9 +14,9 @@ function App() {
     { word: "State", meaning: "An object that stores data for a component." },
   ]);
   const handleClick = () => {
-    let captalize =value.charAt(0).toUpperCase()+value.slice(1)
+    let lowercase =value.toLowerCase()
     
-  const getdata=data.find((datas)=>datas.word===captalize)
+  const getdata=data.find((datas)=>datas.word.toLowerCase()===lowercase)
   if(getdata){
     setdisplayvalue(getdata.meaning)
   }
