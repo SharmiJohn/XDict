@@ -31,6 +31,7 @@ function App() {
       <h1>Dictionary App</h1>
       <div style={{ display: "flex" }}>
         <input
+        type="text"
           value={value}
           placeholder="Search for a word..."
           onChange={(e) => setvalue(e.target.value)}
